@@ -1,0 +1,45 @@
+body{
+font-family: Helvetica;	
+}
+#lewygornyblok{
+	height:400px;
+	width: 70%;
+	background-color: Snow;
+	text-align: center;
+}
+#lewydolnyblok{
+	height:400px;
+	width: 70%;
+	background-color: Snow;
+	font-size: 150%;
+}
+#prawygornyblok {
+	height: 150px;
+	width: 30%;
+	background-color: SteelBlue;
+	font: white;
+	text-align: center;
+}
+#prawysrodkowyblok {
+	height: 350px;
+	width: 30%;
+	background-color: SteelBlue;
+	font: white;
+}
+#prawydolnyblok {
+	height: 300px;
+	width: 30%;
+	background-color: Snow;
+	text-align: center;
+}
+#stopka{
+	background-color:SteelBlue;
+	font: white;
+}
+#h2{
+	font-size: 250%;
+}
+#img{
+	padding: 4px;
+}
+
