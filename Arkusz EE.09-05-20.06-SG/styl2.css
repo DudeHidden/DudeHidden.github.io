@@ -1,45 +1,56 @@
-body{
-font-family: Helvetica;	
+* {
+	font-family: Helvetica;
+	margin: 0;
+	padding: 0;
 }
-#lewygornyblok{
-	height:400px;
+.lewy{
 	width: 70%;
+	float: left;
+}
+.prawy{
+	width: 30%;
+	float: left;
+}
+.lg {
+	height: 400px;
 	background-color: Snow;
+	font-size: 150%;
 	text-align: center;
 }
-#lewydolnyblok{
-	height:400px;
-	width: 70%;
+.ld {
+	height: 400px;
 	background-color: Snow;
 	font-size: 150%;
 }
-#prawygornyblok {
+.pg{
 	height: 150px;
-	width: 30%;
 	background-color: SteelBlue;
-	font: white;
+	color: white;
 	text-align: center;
 }
-#prawysrodkowyblok {
+.ps{
 	height: 350px;
-	width: 30%;
 	background-color: SteelBlue;
-	font: white;
+	color: white;
+	padding-left: 30px;
 }
-#prawydolnyblok {
+.pd{
 	height: 300px;
-	width: 30%;
 	background-color: Snow;
 	text-align: center;
 }
-#stopka{
-	background-color:SteelBlue;
-	font: white;
+.ft{
+	background-color: SteelBlue;
+	color: white;
+	clear: both;
 }
-#h2{
+h2 {
 	font-size: 250%;
 }
-#img{
+img{
 	padding: 4px;
 }
-
+img:hover {
+	padding: 3px;
+	border: 1px solid SteelBlue;
+}
