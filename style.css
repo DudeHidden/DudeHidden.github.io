@@ -7,6 +7,24 @@
 	}
 }
 
+@keyframes moveRight {
+	100% {
+		transform: translateX(-800px);
+	}
+}
+
+@keyframes suspension {
+	100% {
+		transform: translateY(-0.5px);
+	}
+	50% {
+		transform: translateY(1px);
+	}
+	0% {
+		transform: translateY(-0.5px);
+	}
+}
+
 body
 {
 background-color: #303030;
@@ -87,14 +105,49 @@ text-align: center;
 margin: 10px;
 width: 230px;
 height: 212px;
-background-color: #93c748;
 float: left;
 text-align: center;
+background: url(assets/Img_1.png);
+background-size: cover;
+position: relative;
+overflow-x: hidden;
+overflow-y: hidden;
 }
 
-.tile3:hover
+.surface {
+	height: 125px;
+	width: 500%;
+	background: url(assets/Img_02.png);
+	display: block;
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	background-repeat: repeat-x;
+	animation-name: moveRight;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+}
+
+.car {
+	position: absolute;
+	bottom: 13%;
+	left: 10%;
+	animation-name: suspension;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+/*.tile3:hover
 {
-	background-color: #82b637;
+	animation-play-state: paused;
+}
+*/
+
+.surface:hover {
+	animation-play-state: paused;
 }
 
 .tile5
@@ -109,7 +162,7 @@ text-decoration: none;
 float: left;
 animation-name: appear;
 animation-duration: 2s;
-animation-delay: 1s;
+animation-delay: 0.5s;
 animation-iteration-count: 1;
 animation-fill-mode: both;
 }
